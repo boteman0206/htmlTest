@@ -15,8 +15,10 @@
             font-size: 30px;
         }
     </style>
-    <!--base标签写在这里-->
+    <!--base标签写在这里
     <base target="_blank">
+    -->
+
 </head>
 <body>
     <!--todo: a标签的使用
@@ -35,9 +37,16 @@
         和a标签配合使用 又来专门统一指定当前网页中的所有的超链接的（a标签）打开方式
         指定target属性即可 如何a标签也是用了target属性则优先使用a标签中的属性
         todo base标签必须写下head标签的开始标签和结束标签之间 其实写在body好像也可以
+         <base target="_blank">
     -->
 
-    <!--todo 假连接： -->
+    <!--todo 假连接： 点击之后不会调跳转的连接
+      方式： 1： #   自动回回到网页的顶部 跳转到顶部
+             2： javascript:  # 不会回到顶部
+    -->
+    <a href="#">假连接1</a>
+    <a href="javascript:">假连接2</a>
+
 </body>
 <script>
 
