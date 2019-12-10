@@ -23,10 +23,21 @@
        table: 表示整个表格信息表示一个表格
        tr: 表示表格的一行内容
        td: 表示一个单元格信息
+       todo 主要属性：
+           1 高度宽度 可以给table和td
+           2： 水平对齐对齐属性 table，tr，td都可以使用  垂直对齐可以给tr，td标签使用
+           3：外边距和内边距的属性只能给table标签使用
+               单元格和单元格之间的距离 h5中貌似不起作用了
     -->
-    <table>
-        <tr>
-            <td></td>
+    <table border="2px" width="200px" height="100px" align="center" cellspacing="12px"
+    cellpadding="20px">
+        <tr align="center">  <!--单元格内容水平位置的对齐方式-->
+            <td>hello</td>
+            <td>jack</td>
+        </tr>
+        <tr valign="top">  <!--单元格内容垂直位置的对齐方式-->
+            <td>world</td>
+            <td>lucy</td>
         </tr>
     </table>
 
