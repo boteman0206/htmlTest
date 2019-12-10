@@ -28,6 +28,10 @@
            2： 水平对齐对齐属性 table，tr，td都可以使用  垂直对齐可以给tr，td标签使用
            3：外边距和内边距的属性只能给table标签使用
                单元格和单元格之间的距离 h5中貌似不起作用了
+
+       todo 细线表格的制作方式  h5貌似不起作用
+       1： 设置table的背景颜色黑色   cellpadding="1px"
+       2： 分表设置tr的背景颜色为白色
     -->
     <table border="2px" width="200px" height="100px" align="center" cellspacing="12px"
     cellpadding="20px">
@@ -38,6 +42,17 @@
         <tr valign="top">  <!--单元格内容垂直位置的对齐方式-->
             <td>world</td>
             <td>lucy</td>
+        </tr>
+    </table>
+
+    <table bgcolor="black" cellspacing="1">
+        <tr bgcolor="white">
+            <td bgcolor="red">1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr bgcolor="white">
+            <td>2.1</td>
+            <td>2.2</td>
         </tr>
     </table>
 
