@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="/htmlPro/static/jquery-3.3.1.js"></script>
+     <link rel="stylesheet" href="/htmlPro/static/layui-v2.5.5/layui/css/layui.css">
+    <script src="/htmlPro/static/layui-v2.5.5/layui/layui.js"></script>
+
+    <link rel="stylesheet" href="/htmlPro/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="/htmlPro/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
     <title>demo1的test1</title>
 </head>
 <body>
+   
+    <!--
+     {#做笔记的不能运行，会报错 不知道什么鬼#}
+    {#<!DOCTYPE html> 第一行是DTD文档说明 html5的文档说明向下兼容的 #}
+    {#    1: 单标签和双标签#}
+    {#    2：并列关系平级 父子级关系#}
+    {#html->xhtml->html5的区别#}
+    {#todo html语法比较松散 html5增加了更多地功能  xhtml语法比较严格#}
+    {#todo .htm和.html的区别 是由于操作系统的区别，以前的操作系统只能写后缀是.htm#}
+
+    {#todo h标签 是用来给文本添加语义不是用来修改样式的 h1—h6 #}
+    {#    h1：会独占一行，企业中一个页面只能有一个h1标签这个和seo网站优化有关系#}
+    {#todo p标签： 段落标签 #}
+    {#p标签注意点： p标签单独会单独占一行#}
+    {#todo hr标签 显示一条分割线 单独占一行#}
+
+    {#todo 快捷键  alt + 鼠标的左键 可以选中多行方便修改#}
+    -->
     <h1>hello world!</h1>
+
+    <!-- todo img标签  可以设置宽度和高度 但是可能会变形 不会独占一行
+        解决办法： 设置高度，系统会自动按照高度计算出宽度 等比例拉升 不会变形
+        height: 设置高度
+        width： 设置宽度
+        title 属性： 用于高数浏览器鼠标悬停的时候显示的内容
+        alt属性： 图片不存在时候显示的内容
+    -->
+    <img src="/htmlPro/static/img/爱他美4期微商城-04.png" title="hello"
+         alt="带我去多群" height="500px" width="500px">
+    <img src="/htmlPro/static/img/爱他美4期微商城-04.png" title="hello"
+         alt="带我去多群" height="500px" width="500px">
+
+    <!--todo br标签 换行标签 在html中换行的 不另外启动一个标签换行
+    一般企业用的很少 换行直接可以用p标签
+    -->
+
+    <!--添加单击事件-->
+    <button id="bt">点击单击事件</button>
+    <button id="bt">点击单击事件</button>
 </body>
+<script>
+    console.log("heloo");
+    let bt = document.getElementById('bt');
+    bt.addEventListener('click', function () {
+        alert("我被点击了！")
+    })
+</script>
 </html>

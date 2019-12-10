@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/htmlPro/static/jquery-3.3.1.js"></script>
+     <link rel="stylesheet" href="/htmlPro/static/layui-v2.5.5/layui/css/layui.css">
+    <script src="/htmlPro/static/layui-v2.5.5/layui/layui.js"></script>
+
+    <link rel="stylesheet" href="/htmlPro/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="/htmlPro/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <title>demo1的test1</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+    </style>
+    <!--base标签写在这里-->
+    <base target="_blank">
+</head>
+<body>
+    <!--todo: a标签的使用
+    a：标签之前的跳转  href属性指定跳转的页面 图片跳转
+    a标签必须加上http和https
+    跳转本地的一个网页  从a.html跳转到b.html
+    todo target：新开选项卡跳转加上属性 target:_self, _blank
+    todo title：鼠标悬停： 提示描述信息
+     -->
+    <a href="https://search.bilibili.com/all?keyword=HTML%E5%9F%BA%E7%A1%80&from_source=nav_search_new&order=click&duration=0&tids_1=0">哔哩哔哩</a>
+    <!--跳转到本地-->
+    <a href="/htmlPro/templates/demo1/text1.html" target="_blank">跳转到本机的index页面</a>
+    <a href="/htmlPro/templates/demo1/text1.html" target="_self">跳转到本机的index页面</a>
+
+    <!--todo: base标签
+        和a标签配合使用 又来专门统一指定当前网页中的所有的超链接的（a标签）打开方式
+        指定target属性即可 如何a标签也是用了target属性则优先使用a标签中的属性
+        todo base标签必须写下head标签的开始标签和结束标签之间 其实写在body好像也可以
+    -->
+
+    <!--todo 假连接： -->
+</body>
+<script>
+
+</script>
+</html>
